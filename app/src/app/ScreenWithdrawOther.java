@@ -25,7 +25,7 @@ public class ScreenWithdrawOther extends Screen {
 		boolean goToSummary = true;
 		if (!amount.matches("[0-9]+")) {
 			goToSummary = false;
-			message += "Invalid ammount\n";
+			message += "Amount should only contains numbers\n";
 		} else {
 			if (Double.valueOf(amount) % 10 != 0) {
 				goToSummary = false;

@@ -45,7 +45,7 @@ public class ScreenFundTransfer extends Screen {
 				return new ScreenTransaction();
 			message = "";
 			if (!amount.matches("[0-9]+")) {
-				message += "Invalid account\n";
+				message += "Amount should only contains numbers\n";
 				stoper = true;
 			} else {
 				if (Long.valueOf(amount) < 1) {

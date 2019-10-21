@@ -42,7 +42,7 @@ public class ScreenWithdraw extends Screen {
 				screen = new ScreenWithdraw(message);
 			} else {
 				Session.account.setBalance(Session.account.getBalance() - 50);
-				screen = new ScreenWithdrawSummary(10);
+				screen = new ScreenWithdrawSummary(50);
 			}
 			break;
 		case "3":
@@ -51,7 +51,7 @@ public class ScreenWithdraw extends Screen {
 				screen = new ScreenWithdraw(message);
 			} else {
 				Session.account.setBalance(Session.account.getBalance() - 100);
-				screen = new ScreenWithdrawSummary(10);
+				screen = new ScreenWithdrawSummary(100);
 			}
 			break;
 		case "4":
